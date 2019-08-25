@@ -18,6 +18,6 @@
       <%= debug(params) if Rails.env.development? %>
     </div>
     <!--paramsの内容をcontent_tagで表示させてみる-->
-    <%= content_tag(:code, params) %>
+    <%= content_tag(:code, params) if Rails.env.development? %>
   </body>
 </html>
